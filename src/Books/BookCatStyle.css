@@ -1,10 +1,10 @@
 .product-container{
-    padding: 0 1vw;
+    padding: 0 8vw;
     display: flex;
     background-color: lightgreen;
 }
 .btn-click{
-    background-color: black;
+  background-color: black;
   border: none;
   color: white;
   text-align: center;
@@ -25,4 +25,19 @@ overflow: hidden;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
+}
+.img5{
+    margin: 80px;
+}
+.head{
+    font-size: 30px;
+    font-weight: 900;
+}
+.heading{
+    font-size: 20px;
+    font-weight: 1000;
+    font-family: 'Courier New', Courier, monospace;
+}
+.searchdec{
+    background-color: lightgreen;
 }

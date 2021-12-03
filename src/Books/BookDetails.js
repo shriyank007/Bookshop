@@ -1,8 +1,9 @@
 import React from 'react'
 import data from '../Product/Product.json'
 import { useParams } from 'react-router-dom'
-import {Button,Col,Row,Container} from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Col,Row,Container,Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+
 
 
 export default function BookDetails() {
@@ -17,20 +18,19 @@ export default function BookDetails() {
         <Container className="container"> 
         <Row > 
         <Col>
-         <img variant="top" src={book.bk_img} alt="image01"/>
+         <img variant="top" src={book.bk_img} alt="image01" class="img5"/>
         </Col>
         <Col className="coll" > 
-        <h3 className="name">{book.bk_name}</h3>
+        <h3 className="head">Book Name:{book.bk_name}</h3>
         <br></br>
-        <h2> Price : {book.price}</h2>
+        <h3 className="head"> Price : {book.price}</h3>
         <br></br>
-        <h3 className="head">AUTHOR</h3>
-        <p className="des"> {book.author} </p>
+        <h3 className="head">Author: {book.author} </h3>
         <br></br>
-        <h3 className="fit">DESCRIPTION : {book.bk_description}  </h3>
+        <h3 className="head">Description : {book.bk_description}  </h3>
         <br></br>
-        <Button className="btn-click">
-              <Link to={`/cart`}><h4>Add to Cart</h4></Link>
+        <Button className="btn-click ">
+              <Link to={`/cart/${book.bk_name}/${book.price}`}><h4>Add to Cart</h4></Link>
             </Button>
        
         </Col>

@@ -15,7 +15,6 @@ export const signUp=(user)=>{
             payload:{error:"Data not registered"}})
 
         })
-
     }
 
 }

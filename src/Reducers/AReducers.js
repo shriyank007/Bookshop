@@ -1,4 +1,4 @@
-import { authConstant } from '../Actions/ActionConst.js'
+import { authConstant } from '../Actions/ActionConst'
 const initState={
     firstname:'',
     lastname:'',

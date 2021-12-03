@@ -1,8 +1,7 @@
 import React from 'react'
-import {Carousel,Row,Col,Container,Image} from 'react-bootstrap'
+import {Carousel,Row,Col,Container,Image,Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+
 
  function Home() {
     return (
@@ -39,9 +38,9 @@ import Button from '@mui/material/Button';
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-<h1 style={{backgroundColor: 'lightgreen'}}><b><center>OUR BEST SELLERS</center></b></h1>
+<h1 style={{backgroundColor: 'lightgreen'}}><center><img src="./Image/best.jpg" alt="" style ={{width : '100%',height: '200px'}} ></img></center></h1>
 <Container>
-  <Row  style={{backgroundColor: 'lightgrey'}}>
+  <Row>
     <Col xs={6} md={4}>
       <Image src="./Image/m1.jpg" thumbnail />
     </Col>
@@ -53,18 +52,16 @@ import Button from '@mui/material/Button';
     </Col>
   </Row>
   <div style={{width: 'auto'}}>
-                <Image style ={{backgroundSize : 'cover',width: '100%',height: '500px'}}responsive src = "./Image/book.jpg">
+                <Image style ={{backgroundSize : 'cover',width: '100%',height: '500px'}}responsive src = "./Image/my2.jpg">
                
              </Image>
             </div>
             <div>
-            <Stack spacing={2} direction="row">
-            <center>
+              <center>
            <Link to={`/bookcategory`}>
-            <Button variant="contained">Get Started </Button> 
+            <Button variant="btn btn-click">Get Started </Button> 
            </Link>
-           </center>
-            </Stack>
+            </center>
             </div>
            
 </Container>

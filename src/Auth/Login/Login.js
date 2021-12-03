@@ -1,12 +1,9 @@
 import React,{useState} from 'react'
-import { Form,Button} from 'react-bootstrap';
-import { useDispatch} from 'react-redux';
-import { signIn } from '../../Actions/AuthAction'
+import { Form,Button,Container} from 'react-bootstrap';
 import './Loginstyle.css'
-// import axios from 'axios';
+import axios from 'axios';
 
 export const Login=()=> {
-  const dispatchMethod=useDispatch();
     const validateEmail=RegExp('^([a-z0-9.-]+)@([a-z]{5,12}).([a-z.]{2,20})$');
     const validatePwd=RegExp('^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{4,12}$');
     const [inputState,setInputState]=useState({isError: {
@@ -36,30 +33,43 @@ export const Login=()=> {
         console.log("After Submit:",inputState);
 
         const user=inputState;
-        dispatchMethod(signIn(user));
+        axios.post('https://nodeprojectapi.herokuapp.com/login',user)
+         .then(res=>{
+           console.log(res);
+           window.sessionStorage.setItem("Token",res.data.token)
+          })
+          .catch(err=>{
+            console.log(err);
+          })
     }
     return (
-        <div className="login-form">
-
-            <Form onSubmit={submitHandler}>
-                <h2 className="headerTitle">
-                  <center> LOGIN FORM </center>
-                </h2>
-                <fieldset className="field">
-                <Form.Group className="mb-4"  controlId="formBasicFname" >
-                <Form.Label>Email</Form.Label>
-                <Form.Control type ="email" placeholder="Email" name="email" onChange={handleChange}/>
-                </Form.Group>
-                <Form.Group className="mb-4"  controlId="formBasicFname" >
-                <Form.Label>Password</Form.Label>
-                < Form.Control type="password" placeholder="Password" name="password" onChange={handleChange}/>
-               
-                </Form.Group>
-                </fieldset>
-                <Button className="button7" variant="primary" type="submit">LOGIN</Button>
-            </Form>
-        </div>
-          
-        )
-      }
-    
+      <>
+    <div  className="logform">
+       <Container className="contain">  
+        <Form onSubmit={submitHandler}>
+            <h1 className="headerTitle">
+              <center> LOGIN</center>
+            </h1>
+            <fieldset className="field">
+            <Form.Group className="mb-3"  controlId="formBasicEname" >
+            <Form.Label>Email</Form.Label>
+            <Form.Control type ="email" placeholder="Email" name="email" onChange={handleChange}/>
+            </Form.Group>
+            <Form.Group className="mb-3"  controlId="formBasicPname" >
+            <Form.Label>Password</Form.Label>
+            < Form.Control type="password" placeholder="Password" name="password" onChange={handleChange}/>
+           
+            </Form.Group>
+            </fieldset>
+            <center>
+            <Button className="btn-click">
+             Login
+            </Button>
+            </center>
+        </Form>
+        </Container>
+    </div>
+    </>
+      
+    )
+  }

@@ -3,17 +3,12 @@ import {Route,Routes,BrowserRouter as Router} from 'react-router-dom';
 import Header from '../Components/Header';
 import Home from '../Components/Home'
 import About from '../Components/About'
-import { Register } from '../Auth/Register/Register'
-import { Login } from '../Auth/Login/Login'
-
 import BookSubCat from '../Books/BookSubCat';
-
 import BookDetails from '../Books/BookDetails';
 import BookCategory from '../Books/BookCategory';
 import Cart from '../Books/Cart';
-
-//import Contact from '../Components/Contact'
-
+import Register from '../Auth/Register/Register';
+import { Login } from '../Auth/Login/Login';
 const Contact=lazy(()=>import('../Components/Contact'));
 
 
@@ -24,7 +19,7 @@ function Routing() {
          <Header/>
          <Suspense fallback={<h1>Loading...</h1>}>
            <Routes>
-           <Route path="home" element={<Home />}></Route> 
+            <Route path="" element={<Home />}></Route> 
             <Route path="about"  element={<About />}></Route>
             <Route path="contact" element={<Contact />}></Route>
             <Route path="bookcategory" element={<BookCategory />}></Route>
@@ -32,11 +27,8 @@ function Routing() {
             <Route path="bookdetails/:bokId/:subId" element={<BookDetails />}></Route>
             <Route path="reg" element={<Register />}></Route> 
              <Route path="login" element={<Login />}></Route> 
-             <Route path="cart" element={<Cart />}></Route> 
-           
-           
-
-                {/* <Route render={()=><h1>404:Page not found</h1>}></Route> */}
+             <Route path="cart/:cId/:ccId" element={<Cart/>}></Route> 
+             {/* <Route path="*" element={<NotFound />}></Route> */}
         </Routes>
        </Suspense>
         </Router>

@@ -1,5 +1,7 @@
 import React from 'react'
 import "./About.css"
+import {Button} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
 
 function About() {
     return (
@@ -17,9 +19,9 @@ function About() {
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="/Image/ceo.jpg" alt="Jane" style={{width: '100%'}} />
-      <div class="container">
-        <h2>Jane Doe</h2>
+      <img src="/Image/ceo.jpg" alt="Jane" class="img4"/>
+      <div class="container5">
+        <h1>Jane Doe</h1>
         <p class="title">CEO & Founder</p>
       </div>
     </div>
@@ -27,9 +29,9 @@ function About() {
 
   <div class="column">
     <div class="card">
-      <img src="/Image/ceo1.jpg" alt="" />
-      <div class="container">
-        <h2>Mike Ross</h2>
+      <img src="/Image/ceo1.jpg" alt="" class="img4"/>
+      <div class="container5">
+        <h1>Mike Ross</h1>
         <p class="title">CEO & Founder</p>
       </div>
     </div>
@@ -37,12 +39,19 @@ function About() {
 
   <div class="column">
     <div class="card">
-      <img src="/Image/ceo3.jpg" alt="John" style={{width: '100%'}} />
-      <div class="container">
-        <h2>Johnson And Team</h2>
+      <img src="/Image/ceo3.jpg" alt="John" class="img4" />
+      <div class="container5">
+        <h1>Johnson And Team</h1>
         <p class="title">CEO & Founder</p>
       </div>
     </div>
+  </div>
+  <div>
+    <center>
+  <Button className="btn-click">
+    <Link to={`/home`}><h4>HOME</h4></Link>
+     </Button>
+     </center>
   </div>
 </div>
 </>

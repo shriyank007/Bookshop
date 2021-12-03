@@ -8,7 +8,7 @@ import { AiFillLinkedin } from 'react-icons/ai'
 export default function Footer() {
     return (
         <div>
-            <footer class="mainfooter" role="contentinfo">  
+   <footer class="mainfooter" role="contentinfo">  
   <div class="footer-middle">  
   <div class="container">  
     <div class="row">  
@@ -36,19 +36,25 @@ export default function Footer() {
       </div>  
       
         <div class="col-md-3">  
+            <h4>Contact Us </h4>  
+            <h5>www.bookLand@gmail.com</h5>
+            <h5>or,</h5>
+            <h5>Call @:+91 7650986890</h5>
+    </div> 
+    <div class="col-md-3">  
             <h4> Follow Us </h4>  
             <ul class="social-network social-circle"> 
             <IconContext.Provider value={{ color: "green", size: "2em" }}>
-            <li> <BsWhatsapp/></li>  
+            <li><a href="https://web.whatsapp.com"> <BsWhatsapp/></a></li>  
         </IconContext.Provider>
         <IconContext.Provider value={{ color: "blue", size: "2em" }}>
-            <li> <FaFacebookSquare/></li>  
+            <li><a href="https://www.facebook.com"> <FaFacebookSquare/></a></li>  
         </IconContext.Provider> 
         <IconContext.Provider value={{ color: "lightblue", size: "2em" }}>
-            <li> <AiFillLinkedin/></li>  
+            <li><a href="https://www.linkedin.com/signup"> <AiFillLinkedin/></a></li>  
         </IconContext.Provider> 
             </ul>               
-    </div>  
+    </div> 
     </div> 
         <img src="./Image/logo1.jpg" class="img1" alt="img1" style={{width : '15%'}}/>
     <div class="row">  

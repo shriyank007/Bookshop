@@ -17,7 +17,7 @@
                 "bk_id":"BK02",
                "bk_name":"The Guide",
                "price":"Rs 499",
-                "bk_img":"../Image/f2.jpg",
+                "bk_img":"../../Image/f2.jpg",
                 "author":"R.K Narayan",
                 "bk_description":"Fiction Books"
                 },
@@ -25,7 +25,7 @@
                     "bk_id":"BK03",
                     "bk_name":"Seven Days In June",
                     "price":"Rs 340",
-                     "bk_img":"../Image/f3.jpg",
+                     "bk_img":"../../Image/f3.jpg",
                      "author":"Tia Williams",
                      "bk_description":"Fiction Books"
                 },
@@ -33,7 +33,7 @@
                     "bk_id":"BK04",
                     "bk_name":"The Last Thing He Told Me",
                     "price":"Rs 500",
-                     "bk_img":"../Image/f4.jpg",
+                     "bk_img":"../../Image/f4.jpg",
                      "author":"Laura",
                      "bk_description":"Fiction Books"
                 },
@@ -41,7 +41,7 @@
                     "bk_id":"BK05",
                     "bk_name":"Train To Pakistan",
                     "price":"Rs 640",
-                     "bk_img":"../Image/f5.jpg",
+                     "bk_img":"../../Image/f5.jpg",
                      "author":"Khushwant Singh",
                      "bk_description":"Fiction Books"
                 }
@@ -59,7 +59,7 @@
                 "bk_id":"BKH01",
                 "bk_name":"After Life",
                 "price":"Rs 200",
-                 "bk_img":"../Image/h1.jpg",
+                 "bk_img":"../../Image/h1.jpg",
                  "author":"Jessica Faleiro",
                  "bk_description":"Horror Books"
             },
@@ -67,7 +67,7 @@
                 "bk_id":"BKH02",
                 "bk_name":"Ghosts Of The Silent Hills",
                 "price":"Rs 150",
-                 "bk_img":"../Image/h2.jpg",
+                 "bk_img":"../../Image/h2.jpg",
                  "author":"Anita Krishnan",
                  "bk_description":"Horror Books"
                 },
@@ -75,7 +75,7 @@
                       "bk_id":"BKH03",
                       "bk_name":"A Face In The Dark",
                       "price":"Rs 200",
-                       "bk_img":"../Image/h3.jpg",
+                       "bk_img":"../../Image/h3.jpg",
                        "author":"Ruskin Bond",
                        "bk_description":"Horror Books"
                     },
@@ -83,7 +83,7 @@
                         "bk_id":"BKH04",
                         "bk_name":"Dracula",
                         "price":"Rs 550",
-                         "bk_img":"../Image/h4.jpg",
+                         "bk_img":"../../Image/h4.jpg",
                          "author":"Bram Stoker's",
                          "bk_description":"Horror Books"
                         }
@@ -100,7 +100,7 @@
                 "bk_id":"BKB01",
                 "bk_name":"An Autobiography",
                 "price":"Rs 500",
-                 "bk_img":"../Image/b1.jpg",
+                 "bk_img":"../../Image/b1.jpg",
                  "author":"Jawaharlal Nehru",
                  "bk_description":"Autobiography Books"
             },
@@ -108,7 +108,7 @@
                 "bk_id":"BKB02",
                 "bk_name":"A Shot At History",
                 "price":"Rs 600",
-                 "bk_img":"../Image/b2.jpg",
+                 "bk_img":"../../Image/b2.jpg",
                  "author":"Abhinav Bindra",
                  "bk_description":"Autobiography Books"
                 },
@@ -116,7 +116,7 @@
                       "bk_id":"BKB03",
                       "bk_name":"How I Became A Hindu",
                       "price":"Rs 470",
-                       "bk_img":"../Image/b3.jpg",
+                       "bk_img":"../../Image/b3.jpg",
                        "author":"Sita Ram Goel",
                        "bk_description":"Autobiography Books"
                     },
@@ -124,7 +124,7 @@
                         "bk_id":"BKB04",
                         "bk_name":"Wing Of Fire",
                         "price":"Rs 570",
-                         "bk_img":"../Image/b4.jpg",
+                         "bk_img":"../../Image/b4.jpg",
                          "author":"Wings Of Fire",
                          "bk_description":"Autobiography Books"
                       }
@@ -140,7 +140,7 @@
                     "bk_id":"M01",
                     "bk_name":"The Silent Patient",
                     "price":"Rs 300",
-                     "bk_img":"../Image/m1.jpg",
+                     "bk_img":"../../Image/m1.jpg",
                      "author":"Alex Michaelides",
                      "bk_description":"Mystery Books"
                 },
@@ -148,7 +148,7 @@
                     "bk_id":"M02",
                     "bk_name":"Gone Girl",
                     "price":"Rs 150",
-                     "bk_img":"../Image/m2.jpg",
+                     "bk_img":"../../Image/m2.jpg",
                      "author":"Gillian Flynn",
                      "bk_description":"Mystery Books"
                     },
@@ -156,7 +156,7 @@
                           "bk_id":"M03",
                           "bk_name":"Murder On The Orient Express",
                           "price":"Rs 400",
-                           "bk_img":"../Image/m3.jpg",
+                           "bk_img":"../../Image/m3.jpg",
                            "author":"Agatha Christie",
                            "bk_description":"Mystery Books"
                         },
@@ -164,7 +164,7 @@
                             "bk_id":"M04",
                             "bk_name":"The Girl With The Dragon Tatoo",
                             "price":"Rs 400",
-                             "bk_img":"../Image/m4.jpg",
+                             "bk_img":"../../Image/m4.jpg",
                              "author":"Sticg",
                              "bk_description":"Mystery Books"
                           } 
@@ -180,7 +180,7 @@
                             "bk_id":"T01",
                             "bk_name":"The Guest List",
                             "price":"Rs 200",
-                             "bk_img":"../Image/t1.jpg",
+                             "bk_img":"../../Image/t1.jpg",
                              "author":"Lucy Foley",
                              "bk_description":"Thriller Books"
                         },
@@ -188,7 +188,7 @@
                             "bk_id":"T02",
                             "bk_name":"You",
                             "price":"Rs 150",
-                             "bk_img":"../Image/t2.jpg",
+                             "bk_img":"../../Image/t2.jpg",
                              "author":"Caroline Kepnes",
                              "bk_description":"Thriller Books"
                             },
@@ -196,7 +196,7 @@
                                   "bk_id":"T03",
                                   "bk_name":"Verity",
                                   "price":"Rs 499",
-                                   "bk_img":"../Image/t3.jpg",
+                                   "bk_img":".././Image/t3.jpg",
                                    "author":"Colleen Hoover",
                                    "bk_description":"Thriller Books"
                                 },
@@ -204,7 +204,7 @@
                                     "bk_id":"T04",
                                     "bk_name":"Sharp Objects",
                                     "price":"Rs 600",
-                                     "bk_img":"../Image/t4.jpg",
+                                     "bk_img":"../../Image/t4.jpg",
                                      "author":"Gillian Flynn",
                                      "bk_description":"Thriller Books"
                                   }
